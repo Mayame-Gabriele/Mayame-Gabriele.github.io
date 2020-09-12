@@ -1,0 +1,581 @@
+:root{
+    font-size: 62.5%; /*controle das medidas rem 1rem = 10px*/
+}
+/*todo o codigo*/
+html, body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+	background-color: #E7E7E7;    
+}
+.conteudo {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 1000px;
+	background-color: #FFFFFF;
+}
+p{
+    font-size: 1.6rem;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+hr{
+    width: 3rem;
+    margin-bottom: 2%;
+    text-align: center;
+}
+/*cabecalho*/
+header{
+    background-color: #FFFFFF;
+	width: 90%;
+	height: 50px;
+	border-bottom: 1px solid #2C9AB7;
+	position: fixed;
+    z-index: 10;
+}
+#logo img{
+	width: 170px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+/*menu*/
+nav {
+	float: right;
+	width: 640px;
+	text-align: right;
+	margin-right: 15px;
+}
+header nav ul {
+	list-style: none;
+	float: right;
+}
+nav ul li {
+	float: left;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: left;
+	margin-right: 15px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition: all 0.3s linear;
+}
+ul li a {
+	color: #31AED2;
+	text-decoration: none;
+}
+ul li:hover a {
+	color: #FFFFFF;
+}
+#menu_projeto{
+    border-top: 5px solid #A09E9E;
+}
+#menu_projeto:hover{
+    background-color: #A09E9E;
+    padding:  10px 10px 18px 10px;
+    transition: all .2s  linear;
+}
+#menu_saude{
+    border-top: 5px solid #6D6DE2;
+}
+#menu_saude:hover{
+    background-color: #6D6DE2;
+    padding:  10px 10px 18px 10px;
+    transition: all .2s  linear;
+}
+#menu_bem-estar{
+    border-top: 5px solid #23bb88;
+}
+#menu_bem-estar:hover{
+    background-color: #23bb88;
+    padding:  10px 10px 18px 10px;
+    transition: all .2s  linear;
+}
+#menu_casos{
+    border-top: 5px solid #EB4343;
+}
+#menu_casos:hover{
+    background-color: #EB4343;
+    padding:  10px 10px 18px 10px;
+    transition: all .2s  linear;
+}
+#menu_kids{
+    border-top: 5px solid #F7880C;
+}
+#menu_kids:hover{
+    background-color: #F7880C;
+    padding:  10px 10px 18px 10px;
+    transition: all .2s  linear;
+}
+#menu_gabs{
+    border-top: 5px solid #9ACD32;
+}
+#menu_gabs:hover{
+    background-color: #9ACD32;
+    padding:  10px 10px 18px 10px;
+    transition: all .2s  linear;
+}
+/*responsividade*/
+header label{
+    visibility: hidden;
+}
+header #check{
+    display: none;
+}
+#menu_responsivo{
+    visibility: hidden;
+}   
+/*capa*/
+#capa{
+    margin: 0 auto;
+    color: #00070d;
+}
+#capa .principal{
+    background: url("img/sabes-header.jpg");
+    height: 55%;
+	background-size: cover;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+/*titulo*/
+h1{
+    color: #000000;
+    font-size: 25px;    
+    text-transform: uppercase;
+	color: #282828;
+	text-align: center;
+	margin: 0;
+}
+#frase{
+    padding-top: 0;
+    color: #000000;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+#ods{
+    color: #282828;
+    border: 2px #282828 solid;
+    padding: 3px 20px;
+    border-radius: 18px;
+}
+#ods:hover{
+    background-color: #ffffff;
+}
+/*sections*/
+/*titulo das seções*/
+h3{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 2% 0 2rem 0;
+    text-align: center;
+}
+/*sections 2, 3: titulo do texto
+section 3: titulo dos icones
+section 5: saiba mais*/
+h4{
+    font-size: 2.5rem;
+}
+strong{
+    font-size: 1.6rem;
+}
+.section_tipo{
+    padding: 2%;
+    float: left;
+    color: #00070d;
+    border-left: 1px solid #2C9AB7;
+    border-right: 1px solid #2C9AB7;
+	background-color: #ffffff
+}
+.section_cor{
+    background-color: #F3F3F3;
+}
+.coluna{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+.dois{
+    width: 40%
+}
+.tres{
+    padding-top: 0%;
+    width: 23%
+}
+.quatro{
+    width: 15%
+}
+.justify{
+    text-align: justify;
+}
+.centro{
+    text-align: center;
+}
+.border{
+    border: 2px  #D42528;
+}
+/*section 5, rodape*/
+.contato{    
+    display: flex;
+    align-items: center; 
+}
+.banner {
+	background-image: url("img/passando-saber.jpg");
+	height: 3000px;
+	background-attachment: fixed;
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+.vitrine {
+	color: #FFFFFF;
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 10px;
+	letter-spacing: 2px;
+	margin: 10;
+}
+.vitrine_description {
+	color: #FFFFFF;
+	text-align: right;
+	padding-right: 30px;
+	width: 30%;
+	float: right;
+	font-weight: lighter;
+	line-height: 23px;
+	margin: 0;
+}
+/*section 1*/
+.photo{
+	border-radius: 0.5rem;
+    margin: 15px 0 15px 0;
+    width: 100%;
+}
+/*section 2*/
+iframe{
+	border-radius: 0.5rem;
+    margin-top: 2.2vh;
+}
+/*section 3*/
+#acao .icone{
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+    margin: 0 auto;
+}
+#acao .icone img{
+    margin: 0;
+}
+#acao .border:hover{
+    background-color: #cdcccea1;
+    transition: 0.5s;
+}
+#acao .padding{
+    padding-bottom: 4.3vh;
+}
+.p_top{
+    margin-bottom: 0;
+}
+.p_bottom{
+    margin-top: 0;
+}
+#acao a{
+    font-size: 1.6rem;
+    color: #97933a;
+}
+/*section 4*/
+.casos_tipo a{
+    font-size: 1.6rem;
+    color: #5f6d43;
+}
+.casos_tipo #sucesso{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.casos_tipo iframe{
+    width: 100%;
+    height: 23%;
+}
+.casos_tipo strong{
+    color: #5f6d43;
+}
+.casos_tipo ol{
+    font-size: 1.6rem;
+}
+.img_logo{
+    margin-top: 0px;
+    width: 252px;
+	height: 150px;
+}
+.img_logo1{
+    margin-top: 0px;
+    width: 146px;
+	height: 150px;
+}
+.img_footer{
+    margin-top: 0px;
+    width: 40px;
+}
+.print{
+    padding: 5% 5% 0 5%;
+    width: 40%;
+}
+.print_descricao{
+    font-size: 1.2rem;
+}
+/*section 5*/
+#mais a{
+    color: #97933a;
+}
+#mais iframe{
+    width: 100%;
+}
+#mais img{
+    width: 10rem;
+    height: 10rem;
+}
+#mais .contato p {
+    padding-left: 3rem;
+}
+/*section 6*/
+#gabs a{
+    color: #5f6d43;
+}
+.assinatura{
+    text-align: right;
+    font-style: italic;
+}
+/*rodape*/
+#rodape{
+    width: 100%;
+    background-color: #4e4e4e;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+#rodape a{
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+#rodape a:hover{
+    color: #ffffff;
+}
+#rodape .icone{
+    padding: 0.5rem 2rem 0.5rem 0;
+}
+#rodape address{
+    font-size: 1.5rem;
+}
+/*
+    responsividade:
+    @media capta o tamanho da tela, quando a tela
+    estiver menor que 768px, ela vai operar o que
+    estiver dentro dela
+*/
+@media all and (max-width:1024px){
+    :root{
+        font-size: 55%;
+    }
+    #capa .principal{
+        background: url("img/sabes-header.jpg");
+        height: 15%;
+        background-size: cover;
+        padding-top: 15px;
+        padding-bottom: 150px;
+    }
+    /*cabecalho*/
+    nav ul li {
+		display: none;
+	}
+    #logo{
+        text-align: center;
+        width: 170px;
+	    float: left;
+	    margin-top: 3px;
+	    margin-left: 10px;		
+    }
+    #logo img{
+        transform: translateX(-10%);
+    }
+	.alinhar{
+	    width: 40px;
+	    float: right;
+	    margin-top: -10px;
+	    margin-left: 73px;
+	}
+	/*menu2*/
+    header label{
+        visibility: visible;
+        position: absolute;
+        margin: 1.5%;
+        text-align: left;
+        cursor: pointer;
+        z-index: 11;
+        transition: all .2s linear;
+    }
+    #menu_responsivo{
+        visibility: visible;
+        box-sizing: border-box;
+        background-color: #E7E7E7;
+        margin: 5.3rem 0 0 11rem;
+        height: 25vh;
+        width: 45vw;
+		right: -45vw;
+        position: absolute;
+        transition: all .3s linear;
+    }
+    #menu_responsivo a{
+        display: block;
+        text-decoration: none;
+        padding: 7% 5%;
+        color: #FFFFFF;
+        background-color: #00C2CB;
+        border-bottom: 0.1rem #0b162a solid;
+        opacity: 0;
+        margin-top: 5vh;
+        transition: all .4s linear;
+    }
+    #check:checked ~ #menu_responsivo{
+        transform: translateX(-45vw);
+    }
+    #check:checked ~ #menu_responsivo a{
+        opacity: 1;
+        margin-top: 0;
+    }
+    #menu_responsivo a:hover{
+        background-color: #26464b;
+        padding: 7% 5% 7% 10%;
+    }
+    /*titulo*/
+	h1{
+        color: #000000;
+        font-size: 20px;    
+        text-transform: uppercase;
+	    color: #282828;
+	    text-align: left;
+	    margin-left: 20px;
+    }
+    #frase{
+        color: #000000;
+        font-size: 15px;    
+        text-transform: uppercase;
+	    color: #282828;
+	    text-align: left;
+	    margin-left: 10px;
+    }
+    #ods{
+        color: #282828;
+        border: 2px #282828 solid;
+        padding: 3px 20px;
+        border-radius: 18px;
+    }
+    #ods:hover{
+        background-color: #ffffff;
+    }
+    h2{
+        padding-left: 10px; 
+		padding-right: 30%;
+    }
+    p{
+        font-size: 1.6rem;
+        text-justify: auto;
+    }
+    /*sections*/
+    h4{
+        text-align: center;
+    }
+    .section_tipo{
+        padding: 5rem 0 0 0;
+    }
+    .coluna, .dois, .tres, .quatro{
+        display: block; /*divisoes passam a ocupar toda a linha*/
+        padding: 0;
+        width: 80%;
+        margin: 1rem auto;
+        float: none;
+    }
+    .justify{
+        text-align: left;
+    }
+    /*section 1*/
+    /*section 2*/
+    .bem-estar img{
+        margin-top: 2rem;
+    }
+    .bem-estar_como iframe{
+        margin-top: 0;
+    }
+	.banner {
+		display: none;
+	}
+    /*section 3*/
+    #pq .padding{
+        padding: 0;
+    }
+    .p_top,
+    .p_bottom{
+        text-align: center;
+        padding: 0 8%;
+    }
+    /*section 4*/
+    .acao_tipo #sucesso{
+        margin-top: 5rem;
+    }
+    .print{
+        width: 60%;
+    }
+    .print_descricao{
+        font-size: 1.6rem;
+    }
+    /*section 5*/
+    #mais .contato{
+        display: flex;
+    }
+    /*section 6*/
+    #gabs img{
+        margin-top: 1.6rem;
+    }
+    /*rodape*/
+    #rodape{
+        text-align: left;
+    }   
+    #rodape p{
+        padding: 0 15%;
+    }
+    .rodape_bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #rodape .contato{
+        padding: 2% 3.5%;
+    }
+    #rodape .icone{
+        padding: 0.5rem 1rem 0.5rem 0;
+    }
+}
+@media all and (max-width:767px){
+    header label{
+        margin: 4%;
+    }
+    #ods{
+        color: #26464b;
+        border: 0.1rem #26464b solid;
+    }
+    #ods:hover{
+        background-color: #26464b44;
+    }
+    .print_descricao{
+        font-size: 1.2rem;
+    }
+    #mais .contato{
+        padding: 0 5%;
+        display: block;
+        text-align: center;
+    }
+    .rodape_bottom{
+        display: initial;
+    }
+    .contato{
+        float: left;
+    }
+}
